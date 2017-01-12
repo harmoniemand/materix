@@ -5,14 +5,17 @@ var port = new SerialPort('/dev/serial0', {
 
 var write = function () {
     for (var i = 0; i < 240; i++) {
-        port.write(100, function (err) {
+        var buffer = new Buffer(1);
+        buffer[0] = 0x99; 
+        
+        port.write(buffer, function (err) {
             if (err) {
                 return console.log('Error on write: ', err.message);
             }
-            console.log('message written');
         });
     }
 
+    console.log("frame ending");
     setTimeout(write, 20);    
 };
 
