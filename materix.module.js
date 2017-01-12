@@ -3,8 +3,12 @@ module.exports = function(options) {
 
     var _sampleBox = {
         orientation: landscape, // portrait
-        
-    }
+        rotation: normal, // inverse - normal -> Stecker oben, inverse -> Stecker unten
+        position: {
+            x: 0,
+            y: 0
+        }
+    };
 
     var boxes = [];
 
