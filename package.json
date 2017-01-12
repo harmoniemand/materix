@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/harmoniemand/matelight-extreme/issues"
   },
-  "homepage": "https://github.com/harmoniemand/matelight-extreme#readme"
+  "homepage": "https://github.com/harmoniemand/matelight-extreme#readme",
+  "dependencies": {
+    "serialport": "^4.0.7"
+  }
 }
