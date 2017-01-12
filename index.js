@@ -1,5 +1,5 @@
 var SerialPort = require('serialport');
-var port = new SerialPort('/dev/tty-usbserial1');
+var port = new SerialPort('/dev/serial0');
 
 port.on('open', function() {
   port.write('main screen turn on', function(err) {
