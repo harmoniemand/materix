@@ -6,7 +6,7 @@ var port = new SerialPort('/dev/serial0', {
 var write = function () {
     for (var i = 0; i < 240; i++) {
         var buffer = new Buffer(1);
-        buffer[0] = 0x99; 
+        buffer[0] = Math.random(i) * 200; 
         
         port.write(buffer, function (err) {
             if (err) {
