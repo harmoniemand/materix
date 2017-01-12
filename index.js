@@ -1,5 +1,7 @@
 var SerialPort = require('serialport');
-var port = new SerialPort('/dev/serial0');
+var port = new SerialPort('/dev/serial0', {
+  baudRate: 115200
+});
 
 var write = function () {
     for (var i = 0; i < 240; i++) {
