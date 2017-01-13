@@ -17,7 +17,7 @@ module.exports = function(options) {
 
     };
 
-    function setPixel() {
+    function setPixel(x, y, color) { //color array: [r, g, b]
 
     };
 
